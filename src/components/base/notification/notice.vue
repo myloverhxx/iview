@@ -136,6 +136,18 @@
             },
             handleEnter (el) {
                 if (this.type === 'message') {
+                    let hasMessage = document.querySelectorAll('.ivu-message-notice')
+                    if( document.querySelectorAll('.ivu-message-notice').length > 1 ) {
+                        console.log(document.querySelectorAll('.ivu-message-notice').length)
+                        let MessageList = Array.from(document.querySelectorAll('.ivu-message-notice'))
+                        for( let i = 0; i < MessageList.length; i++) {
+                            if( i != MessageList.length-1) {
+                                MessageList[i].hidden = true
+                            }else {
+                                
+                            }
+                        }
+                    }
                     el.style.height = el.scrollHeight + 'px';
                 }
             },

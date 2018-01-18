@@ -36,7 +36,6 @@ function notice (content = '', duration = defaults.duration, type, onClose = fun
 
     // if loading
     const loadCls = type === 'loading' ? ' ivu-load-loop' : '';
-
     let instance = getMessageInstance();
 
     instance.notice({
