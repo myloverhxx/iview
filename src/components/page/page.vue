@@ -61,8 +61,7 @@
             :all-pages="allPages"
             :is-small="isSmall"
             @on-size="onSize"
-            @on-page="onPage"
-            transfer>
+            @on-page="onPage">
         </Options>
     </ul>
 </template>
