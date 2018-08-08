@@ -23911,7 +23911,6 @@ exports.default = {
             if (this.type === 'message') {
                 var hasMessage = document.querySelectorAll('.ivu-message-notice');
                 if (document.querySelectorAll('.ivu-message-notice').length > 1) {
-                    console.log(document.querySelectorAll('.ivu-message-notice').length);
                     var MessageList = (0, _from2.default)(document.querySelectorAll('.ivu-message-notice'));
                     for (var i = 0; i < MessageList.length; i++) {
                         if (i != MessageList.length - 1) {
